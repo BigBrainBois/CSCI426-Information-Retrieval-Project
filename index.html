@@ -2,33 +2,303 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="stylesheet.css" rel="stylesheet" />
+    <!--For mobile responsive design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
     />
     <title>Movenite</title>
   </head>
 
-  <!--This is for mobile responsive design-->
-  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
   <body>
-    <div class="content">
-      <img
-        class="logo"
-        src="assets/video-camera.svg"
-        alt="Movienite"
-        width="80"
-        height="80"
-      />
-      <h1>Movienite</h1>
+    <div class="container p-6 has-background-black-ter">
+      <!--Movienite Title Hero-->
+      <section class="hero is-danger is-bold has-text-centered">
+        <div class="hero-body">
+          <div class="container">
+            <img class="logo" src="assets/video-camera.svg" alt="Movienite" />
+            <h1 class="title is-1 has-text-info-light">Movienite</h1>
+          </div>
+        </div>
+      </section>
+
+      <div class="block">
+        <div class="columns p-6">
+          <!--Search Card on the Left-->
+          <div class="column is-one-quarter">
+            <div class="box">
+              <!--Header "Search"-->
+              <div class="columns is-vcentered">
+                <div class="column is-4">
+                  <figure class="image is-32x32">
+                    <img src="assets/loupe (1).png" alt="Image" />
+                  </figure>
+                </div>
+                <div class="column">
+                  <h5 class="title is-5">Search</h5>
+                </div>
+              </div>
+              <!--End Header "Search"-->
+
+              <!--SearchBar and Filtering-->
+              <div class="block">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Name of Movie or TV Show..."
+                />
+                <input
+                  class="button is-danger is-light mt-3"
+                  type="submit"
+                  value="Submit input"
+                />
+              </div>
+
+              <!--Dropdowns-->
+              <div class="block">
+                <p>Search By Genre</p>
+                <div class="field mt-3">
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option selected>Select Genre</option>
+                        <option>Action</option>
+                        <option>Adventure</option>
+                        <option>Animated</option>
+                        <option>Comedy</option>
+                        <option>Documentary</option>
+                        <option>Drama</option>
+                        <option>Educational</option>
+                        <option>Fantasy</option>
+                        <option>Horror</option>
+                        <option>Mystery</option>
+                        <option>Romance</option>
+                        <option>Science Fiction</option>
+                        <option>Sports</option>
+                      </select>
+                    </span>
+                  </p>
+                </div>
+
+                <div class="field mt-3">
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option selected>Select Genre</option>
+                        <option>Action</option>
+                        <option>Adventure</option>
+                        <option>Animated</option>
+                        <option>Comedy</option>
+                        <option>Documentary</option>
+                        <option>Drama</option>
+                        <option>Educational</option>
+                        <option>Fantasy</option>
+                        <option>Horror</option>
+                        <option>Mystery</option>
+                        <option>Romance</option>
+                        <option>Science Fiction</option>
+                        <option>Sports</option>
+                      </select>
+                    </span>
+                  </p>
+                </div>
+
+                <div class="field mt-3">
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option selected>Select Genre</option>
+                        <option>Action</option>
+                        <option>Adventure</option>
+                        <option>Animated</option>
+                        <option>Comedy</option>
+                        <option>Documentary</option>
+                        <option>Drama</option>
+                        <option>Educational</option>
+                        <option>Fantasy</option>
+                        <option>Horror</option>
+                        <option>Mystery</option>
+                        <option>Romance</option>
+                        <option>Science Fiction</option>
+                        <option>Sports</option>
+                      </select>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End SearchBar and Filtering Card-->
+
+          <!--Content Card of Movies and Shows-->
+          <div class="column">
+            <div class="box">
+              <h2 class="title is-5">🎥🎬</h2>
+
+              <!--Search Results show up here-->
+              <div class="tile notification has-background-danger-light">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                        alt="Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <strong class="title is-4">Movie Title</strong>
+                      <div class="tags pb-2">
+                        <span class="tag is-info">Genre</span>
+                        <span class="tag is-success">Genre</span>
+                        <span class="tag is-warning">Genre</span>
+                      </div>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum corporis deleniti facilis dolorem rerum, hic
+                      soluta. Inventore ipsum laborum magni eveniet facere neque
+                      nisi asperiores veniam dolores quo doloribus, blanditiis
+                      voluptatem ab! Soluta iusto iste voluptatibus nemo ea
+                      recusandae amet?
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="tile notification has-background-danger-light">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                        alt="Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <strong class="title is-4">Movie Title</strong>
+                      <div class="tags pb-2">
+                        <span class="tag is-info">Genre</span>
+                        <span class="tag is-success">Genre</span>
+                        <span class="tag is-warning">Genre</span>
+                      </div>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum corporis deleniti facilis dolorem rerum, hic
+                      soluta. Inventore ipsum laborum magni eveniet facere neque
+                      nisi asperiores veniam dolores quo doloribus, blanditiis
+                      voluptatem ab! Soluta iusto iste voluptatibus nemo ea
+                      recusandae amet?
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="tile notification has-background-danger-light">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                        alt="Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <strong class="title is-4">Movie Title</strong>
+                      <div class="tags pb-2">
+                        <span class="tag is-info">Genre</span>
+                        <span class="tag is-success">Genre</span>
+                        <span class="tag is-warning">Genre</span>
+                      </div>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum corporis deleniti facilis dolorem rerum, hic
+                      soluta. Inventore ipsum laborum magni eveniet facere neque
+                      nisi asperiores veniam dolores quo doloribus, blanditiis
+                      voluptatem ab! Soluta iusto iste voluptatibus nemo ea
+                      recusandae amet?
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="tile notification has-background-danger-light">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                        alt="Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <strong class="title is-4">Movie Title</strong>
+                      <div class="tags pb-2">
+                        <span class="tag is-info">Genre</span>
+                        <span class="tag is-success">Genre</span>
+                        <span class="tag is-warning">Genre</span>
+                      </div>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum corporis deleniti facilis dolorem rerum, hic
+                      soluta. Inventore ipsum laborum magni eveniet facere neque
+                      nisi asperiores veniam dolores quo doloribus, blanditiis
+                      voluptatem ab! Soluta iusto iste voluptatibus nemo ea
+                      recusandae amet?
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="tile notification has-background-danger-light">
+                <article class="media">
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <img
+                        src="https://bulma.io/images/placeholders/128x128.png"
+                        alt="Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <div class="content">
+                      <strong class="title is-4">Movie Title</strong>
+                      <div class="tags pb-2">
+                        <span class="tag is-info">Genre</span>
+                        <span class="tag is-success">Genre</span>
+                        <span class="tag is-warning">Genre</span>
+                      </div>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Nostrum corporis deleniti facilis dolorem rerum, hic
+                      soluta. Inventore ipsum laborum magni eveniet facere neque
+                      nisi asperiores veniam dolores quo doloribus, blanditiis
+                      voluptatem ab! Soluta iusto iste voluptatibus nemo ea
+                      recusandae amet?
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <!--End Content Card-->
+        </div>
+      </div>
     </div>
 
-    <div class="content">
-      <ul>
-        <li></li>
-      </ul>
-    </div>
+    <footer class="footer has-text-black">
+      <div class="content has-text-centered is-justify-content-flex-end">
+        <p>2020-2020 Movienite | All Rights Reserved</p>
+      </div>
+    </footer>
   </body>
+
+  <!--Bulma Font // Scripts-->
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+  ></script>
 </html>

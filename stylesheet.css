@@ -1,19 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+/*backup if bulma fails on me*/
 
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 * {
   width: 100%;
   margin: 0; /* Ignore web browser's default padding and margins */
   font-family: "Cabin", sans-serif;
-  background-color: #121212;
+  /* background-color: #121212; */
 }
 
-.container {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+.logo{
+  width: 80px;
+  height: 80px;
 }
 
-h1 {
-  text-align: center;
-  color: white;
+
+.media-left {
+  width: auto;
+}
+
+.tag {
+  width: 50px;
 }
